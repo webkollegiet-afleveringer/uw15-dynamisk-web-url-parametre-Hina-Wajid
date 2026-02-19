@@ -1,0 +1,65 @@
+.wrapper {
+    max-width: 82.5rem;
+    /* we started with on or other measurement */
+    margin-inline: max((100% - 82.5rem) / 2, 1.5rem);
+    /* take the hightest value */
+    margin-block: 2rem;
+    /* is margin top and bottom */
+} 
+
+.destination-container {
+   
+    background-color: rgb(200, 197, 193);
+    padding: 2rem;}
+
+.destination-container h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    
+    margin-inline: auto;
+   
+
+}
+
+.destination-card {
+   background-color: white;
+    margin: 0;
+}
+.destination-card__img-wrapper{
+     aspect-ratio: 360 / 288;
+     overflow: hidden;
+}
+
+.destination-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.destination__card__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+}
+.destination__card__info a{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.button__add_to_fav
+{
+  
+}
+.active path {
+    fill: red;
+}

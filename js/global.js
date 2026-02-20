@@ -51,13 +51,4 @@ function toggleHearts() {
             setLocalItem("favorites", favorites)
         })
     })
-
-    /* function addtofavClick(event){
-    
-        console.log(event.target);
-        console.log(event.currentTarget);
-        
-        svgDom = event.currentTarget
-        svgDom.classList.toggle("active");
-    } */
 }

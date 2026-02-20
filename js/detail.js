@@ -44,7 +44,7 @@ function page(data) {
 
     const destinationDetailCard = document.querySelector(".destination__detail_card");
     const destinationFacilitiesString =  /*html*/
-    `<h2 class="destination__name">${destination}</h2>
+        `<h2 class="destination__name">${destination}</h2>
                 <h3 class="destination__title">${title}</h3>
                 <h4 class="destination__subtitle">${subtitle}</h4>
                 <p class="destination__text">${text}</p>

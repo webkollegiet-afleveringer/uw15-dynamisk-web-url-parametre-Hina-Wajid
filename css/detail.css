@@ -1,5 +1,5 @@
 #main-wrapper {
-   max-width: 82.5rem;
+    max-width: 82.5rem;
     /* we started with on or other measurement */
     margin-inline: max((100% - 82.5rem) / 2, 1.5rem);
     /* take the hightest value */
@@ -12,21 +12,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-   
+
 }
 
-.destination__detail_card {
-    
-    
-    
-}
-.destination__detail_image
-{
-    display: grid;
-    position: relative;
-}
-.destination__detail_image img
-{
+.destination__detail_card {}
+
+.destination__detail_card .destination__detail_image {}
+
+.destination__detail_image img {
     height: 100;
     width: 100%;
     aspect-ratio: 712 / 832;
@@ -35,15 +28,19 @@
 }
 
 .icon-favourite {
-
-  margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
     z-index: 2;
-    position: absolute;
-   
+    width: 100%;
 }
-.icon-favourite span{
-margin-left:0.35rem;
+
+.icon-favourite span {
+    margin-left: 0.35rem;
+    display: flex;
 }
+
+
 .destination__name {}
 
 .destination__title {}

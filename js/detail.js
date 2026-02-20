@@ -65,6 +65,7 @@ function page(data) {
     }
     )
     toggleHearts();
+    setHearts();
 }
 
 

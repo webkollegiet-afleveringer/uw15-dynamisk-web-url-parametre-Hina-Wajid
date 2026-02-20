@@ -5,12 +5,30 @@ function getLocalItem(key) {
     return JSON.parse(localStorage.getItem(key)) || []
 }
 
+function setHearts() {
+
+    const addToFav = mainWrapperDom.querySelectorAll(".button__add_to_fav");
+    const favorites = getLocalItem("favorites");
+      if (!addToFav.length) {
+        return
+    }
+    addToFav.forEach((btn) => {
+        const id = btn.dataset.id;
+        if(favorites.includes(id))
+        {
+             btn.classList.add("active");
+        }
+    })
+     
+}
+
 function toggleHearts() {
 
     const addToFav = mainWrapperDom.querySelectorAll(".button__add_to_fav");
     if (addToFav.length == 0) {
         return
     }
+     
     addToFav.forEach((btn) => {
         btn.addEventListener("click", () => {
             //find id

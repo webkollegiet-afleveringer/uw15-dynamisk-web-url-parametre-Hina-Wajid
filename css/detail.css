@@ -1,0 +1,52 @@
+#main-wrapper {
+    max-width: 82.5rem;
+    /* we started with on or other measurement */
+    margin-inline: max((100% - 82.5rem) / 2, 1.5rem);
+    /* take the hightest value */
+    margin-block: 3rem;
+    /* is margin top and bottom */
+
+}
+
+.destination__detail__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+}
+
+.destination__detail_card {}
+
+.destination__detail_card .destination__detail_image {}
+
+.destination__detail_image img {
+    height: 100;
+    width: 100%;
+    aspect-ratio: 712 / 832;
+    object-fit: fill;
+
+}
+
+.icon-favourite {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    z-index: 2;
+    width: 100%;
+}
+
+.icon-favourite span {
+    margin-left: 0.35rem;
+    display: flex;
+}
+
+
+.destination__name {}
+
+.destination__title {}
+
+.destination__subtitle {}
+
+.destination__text {}
+
+.destination__facilities {}

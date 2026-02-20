@@ -41,5 +41,6 @@ function page(data) {
     const destinationGrid = document.querySelector(".destination-grid");
     destinationGrid.insertAdjacentHTML("beforeend", destinationCardString);
     toggleHearts();
+    setHearts();
 }
 

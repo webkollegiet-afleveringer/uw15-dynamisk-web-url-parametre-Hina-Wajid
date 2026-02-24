@@ -15,7 +15,10 @@
 
 }
 
-.destination__detail_card {}
+.destination__detail_card {
+    display: grid;
+    padding: 4rem;
+}
 
 .destination__detail_card .destination__detail_image {}
 
